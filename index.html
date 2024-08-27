@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LOKNIYAI</title>
+    <style>
+      html, body {
+          margin: 0;
+          padding: 0;
+          height: 100%; /* ให้ body เต็มหน้าจอ */
+          overflow: hidden; /* ปิดการเลื่อนของหน้าเว็บ */
+          background-color: #cccccc;
+          margin: 0 auto;
+      }   
+
+      #root {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       
+        width: 100%;
+        
+        height: calc(100% ); /* ปรับขนาดให้พอดีกับหน้าจอหลัง topbar */
+        /* background: linear-gradient(to bottom, #e0e0e0, #000000); */
+        /* background: linear-gradient(to bottom, rgb(92, 251, 0),rgb(40, 17, 193)); */
+       /* background-color: rgb(70, 70, 70); */
+       background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+        overflow-y: auto; /* เปิดการเลื่อนเฉพาะใน root */
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="root"></div>
+   
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
